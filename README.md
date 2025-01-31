@@ -33,13 +33,13 @@ This is a simple Node.js API that returns the programmer's email address, the cu
 ### Steps to call online
 5. Access the API at:
    ```
-   http://localhost:3000/
+   https://hng-task-0-1r9j.onrender.com
    ```
 
 ## API Documentation
 ### Endpoint
 - **Local URL:** `http://localhost:3000/`
-- **Hosted URL:** ``
+- **Hosted URL:** `https://hng-task-0-1r9j.onrender.com`
 - **Method:** GET
 - **Request Format:** None required
 - **Response Format:** JSON

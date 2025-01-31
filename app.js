@@ -1,9 +1,10 @@
+// Importing important libraries
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 
 const app = express()
-app.use(express.json({limit:'100mb'}))
+app.use(express.json({limit:'10mb'})) // Size limiting the Json files
 app.use(express.urlencoded({limit:'100mb',extended:true}))
 app.use(cors({credentials:true}))
 app.use(bodyParser.json())
@@ -22,7 +23,7 @@ app.get('/',(req,res)=>{
 
         })
     } catch (error) {
-        return res.status(200).json({error:error.message})
+        return res.status(400).json({error:error.message})
     }
 })
 
