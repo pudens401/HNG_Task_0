@@ -11,7 +11,9 @@ app.use(bodyParser.json())
 
 app.get('/getInfo',(req,res)=>{
     try {
-        
+        const email = "iradukunda401@gmail.com"
+        const current_datetime = new Date().toISOString();
+        const 
         return res.status(200).json({
 
         })
